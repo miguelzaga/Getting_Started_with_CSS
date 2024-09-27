@@ -1,5 +1,3 @@
-/* TODO: reformat styles to use classes */
-
 /* Variables */
 :root {
   --white: #f8f7ff;
@@ -66,12 +64,47 @@ img {
   margin: 0 auto;
 }
 
+.nav {
+  background-color: var(--dark-blue);
+  position: absolute;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.2s ease;
+}
+
+.nav:target {
+  transform: translateY(0);
+}
+
+.nav__hamburger,
+.nav__close {
+  font-size: 1.5rem;
+  color: var(--white);
+}
+
+.nav .nav__close {
+  position: absolute;
+  top: calc(1rem + 5px);
+  right: 1rem;
+}
+
+.nav__hamburger {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+}
+
 .nav__list {
   list-style-type: none;
   padding: 0;
   margin: 0;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -87,8 +120,7 @@ img {
 }
 
 .nav [class*="fa-"] {
-  font-size: 150%;
-  color: var(--light-blue);
+  font-size: 1.5rem;
 }
 
 .nav__link {
@@ -194,7 +226,7 @@ img {
 /* Footer */
 .footer {
   text-align: center;
-  padding: 4rem 0;
+  padding: 5rem 0;
 }
 
 .footer__title {
@@ -245,6 +277,27 @@ img {
 
   .project--reverse .project__list {
     justify-content: flex-start;
+  }
+}
+
+@media (min-width: 560px) {
+  .nav {
+    background-color: var(--black);
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: auto;
+    display: block;
+    transform: translateY(0);
+  }
+
+  .nav__list {
+    flex-direction: row;
+  }
+
+  .nav__close,
+  .nav__hamburger {
+    display: none;
   }
 }
 
