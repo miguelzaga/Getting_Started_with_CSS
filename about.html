@@ -15,28 +15,29 @@
 
 <body>
 
-    <nav>
-        <ul>
-            <li>
-                <h1><a href="index.html"><i class="fa-solid fa-glasses icon" aria-hidden="true"></i>Miguel Zapata</a>
-                </h1>
+    <nav class="nav">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <h1><a class="nav__link nav__link--name" href="index.html"><i class="fa-solid fa-glasses icon"
+                            aria-hidden="true"></i>Miguel Zapata</a></h1>
             </li>
-            <li><a href=#projects>Projects</a></li>
-            <li><a href=#about.html>About</a></li>
-            <li><a href=#contact>Contact</a></li>
-            <li><a href=#><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <li class="nav__item"><a class="nav__link" href=#projects>Projects</a></li>
+            <li class="nav__item"><a class="nav__link" href="about.html">About</a></li>
+            <li class="nav__item"><a class="nav__link" href=#contact>Contact</a></li>
+            <li class="nav__item"><a class="nav__link" href=#><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                     <span class="sr-only">LinkedIn</span></a></li>
-            <li><a href=#><i class="fa-brands fa-square-github"></i><span class="sr-only">Github</span></a></li>
-            <li><a class="button" href=#>Resume</a></li>
+            <li class="nav__item"><a class="nav__link" href=#><i class="fa-brands fa-square-github"></i><span
+                        class="sr-only">Github</span></a></li>
+            <li class="nav__item"><a class="nav__link button" href=#>Resume</a></li>
         </ul>
     </nav>
 
     <div class="gradient"></div>
-    <section id="projects">
-        <h2>About Miguel Zapata</h2>
-        <article>
-            <div class="text">
-                <h3>Just the highlights</h3>
+    <section id="about" class="projects section">
+        <h2 class="projects__title">About Miguel Zapata</h2>
+        <article class="project">
+            <div class="project__text">
+                <h3 class="project__title">Just the highlights</h3>
                 <p class="project__description">Description of the project. This should be fairly concise while also
                     describing the key components that you developed or worked on. It can be as long as you need it to
                     be but should at least be a few sentences long. Be sure to include specific links anywhere in the
@@ -44,23 +45,23 @@
                         href="https://frontendmasters.github.io/grid-flexbox-v2/">this</a>, and multiple links look <a
                         href="#">like this</a> and <a href="#">like this</a>.</p>
                 <h4>Technologies used include:</h4>
-                <ul>
+                <ul class="project__list">
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>SVG</li>
                 </ul>
             </div>
-            <img src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
+            <img class="project__img" src="https://assets.codepen.io/296057/fem-gettingstartedcss-ch5-1.png"
                 alt="Screenshot of the Wall of Wonder." />
         </article>
     </section>
     <div class="gradient"></div>
 
-    <footer>
-        <h2>
+    <footer class="footer">
+        <h2 class="footer__title">
             Miguel Zapata &middot; Web Developer
         </h2>
-        <ul>
+        <ul class="footer__list">
             <li><a href=#><i class="fa-brands fa-linkedin" aria-hidden="true"></i>
                     <span class="sr-only">LinkedIn</span></a></li>
             <li><a href=#><i class="fa-brands fa-square-github"></i>
@@ -69,6 +70,7 @@
                     <span class="sr-only">Email</span></a></li>
         </ul>
     </footer>
+
 </body>
 
 </html>
