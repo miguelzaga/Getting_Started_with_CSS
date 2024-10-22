@@ -107,7 +107,7 @@ img {
   flex-flow: column wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .nav__item:first-child {
@@ -293,6 +293,7 @@ img {
 
   .nav__list {
     flex-direction: row;
+    gap: 2rem;
   }
 
   .nav__close,
